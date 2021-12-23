@@ -7,9 +7,9 @@ using System.Linq;
 
 
  
-Console.WriteLine("::set-output name=nombre::{0}"  , "sebastian"); 
-Console.WriteLine("::set-output name=time::{0}"  , "la hora");  
- 
+Console.WriteLine("set-output name=nombre::{0}"  , "sebastian"); 
+Console.WriteLine("set-output name=time::{0}"  , "la hora");  
+
 String jsonSecretos = System.Environment.GetEnvironmentVariable("json");
 String prefijo = System.Environment.GetEnvironmentVariable("prefijo");
 String sufijo = System.Environment.GetEnvironmentVariable("sufijo");
