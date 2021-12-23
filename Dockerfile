@@ -6,4 +6,4 @@ COPY *.csproj ./
 COPY *.cs ./
 RUN dotnet restore
  
-ENTRYPOINT ["/replace.cs"]
+ENTRYPOINT ["dotnet","run","replace.cs"]
