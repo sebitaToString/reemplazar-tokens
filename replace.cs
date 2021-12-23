@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using System.Linq;
 
 
- 
+
 Console.WriteLine("set-output name=nombre::{0}"  , "sebastian"); 
 Console.WriteLine("set-output name=time::{0}"  , "la hora");  
 
