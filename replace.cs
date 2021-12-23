@@ -6,15 +6,15 @@ using System.Text.RegularExpressions;
 using System.Linq;
 
 
-
-Console.WriteLine("Saludos victor" );
+ 
+Console.WriteLine("::set-output name=nombre::{0}"  , "sebastian"); 
 String jsonSecretos = System.Environment.GetEnvironmentVariable("json");
 String prefijo = System.Environment.GetEnvironmentVariable("prefijo");
 String sufijo = System.Environment.GetEnvironmentVariable("sufijo");
 String ruta = System.Environment.GetEnvironmentVariable("path");
 
 
-ReplaceTokens(jsonSecretos,prefijo, sufijo, ruta);
+//ReplaceTokens(jsonSecretos,prefijo, sufijo, ruta);
 
 
 static void ReplaceTokens(string jsonSecretos, string prefijo, string sufijo, string ruta, bool validarTodos = false)
@@ -55,7 +55,7 @@ static void ReplaceTokens(string jsonSecretos, string prefijo, string sufijo, st
 
                 }
             }
-            File.WriteAllText("reemplazo_" + archivo.Name, texto);
+            Console.WriteLine("::set-output name=time::{0}"  , texto); 
         }
     }
     catch (Exception e)
