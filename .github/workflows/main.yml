@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: sebitaToString/reemplazar-tokens@v4
+        uses: sebitaToString/reemplazar-tokens@v5
         with:
           who-to-greet: 'seeeeeeeeeeba'
       # Use the output from the `hello` step
