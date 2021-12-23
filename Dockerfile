@@ -5,5 +5,5 @@ WORKDIR /app
 COPY *.csproj ./
 COPY *.cs ./
 RUN dotnet restore
-
-RUN dotnet run replace.cs
+ 
+ENTRYPOINT ["/replace.cs"]
