@@ -5,5 +5,4 @@ WORKDIR /app
 COPY *.csproj ./
 COPY *.cs ./
 RUN dotnet restore
-RUN ls
-ENTRYPOINT ["dotnet","run","/app/replace.cs"]
+ENTRYPOINT ["dotnet","run","replace.cs"]
