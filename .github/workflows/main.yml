@@ -15,4 +15,4 @@ jobs:
         with:
           who-to-greet: 'Mona the Octocat' 
       - name: Obtiene nombre desde el binario
-        run: echo "Nombre: ${{ steps.sebaaccion.outputs.nombre }}"
+        run: echo "Nombre ${{ steps.sebaaccion.outputs.nombre }}"
